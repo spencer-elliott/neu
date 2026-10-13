@@ -1,0 +1,6 @@
+BINF6200
+Assignment 4 - Question 3
+By Spencer Elliott
+
+Both the standard codon table and the specific codon table for bacteria have L (leucine) listed as a start codon.
+When the program is run with each of these sequences, the anthrax sequence is said to have a start at the initial codon. No results change.
