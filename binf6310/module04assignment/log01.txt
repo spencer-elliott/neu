@@ -1,0 +1,27 @@
+top - 14:18:58 up 21 min,  0 users,  load average: 0.01, 0.04, 0.00
+Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7887.7 total,   6555.2 free,    777.0 used,    789.2 buff/cache     
+MiB Swap:   2048.0 total,   2047.5 free,      0.5 used.   7110.7 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  344 spencer   20   0 9959.4m 179252  57756 S   0.0   2.2   0:12.89 MainThread
+  269 spencer   20   0 1796480 160132  55500 S   0.0   2.0   0:03.85 MainThread
+  329 spencer   20   0   17.7g 126432  58404 S   0.0   1.6   0:01.55 MainThread
+  398 spencer   20   0 1469220  85872  49948 S   0.0   1.1   0:02.19 MainThread
+  283 spencer   20   0 1422180  70484  40220 S  10.0   0.9   0:00.81 MainThread
+  750 spencer   20   0 1491760  66600  44480 S   0.0   0.8   0:00.11 MainThread
+  322 spencer   20   0 1449288  60848  42776 S   0.0   0.8   0:00.21 MainThread
+  307 spencer   20   0 1411452  58660  40196 S   0.0   0.7   0:00.74 MainThread
+  409 spencer   20   0    6372   5600   3768 S   0.0   0.1   0:00.18 bash
+ 3009 spencer   20   0    8152   4984   3180 R   0.0   0.1   0:00.00 top
+  187 spencer   20   0    2876   1256   1164 S   0.0   0.0   0:00.00 sh
+  186 spencer   20   0    2876   1224   1128 S   0.0   0.0   0:00.00 sh
+  265 spencer   20   0    2876   1224   1132 S   0.0   0.0   0:00.00 sh
+    1 root      20   0    1804   1188   1104 S   0.0   0.0   0:00.01 init
+  282 root      20   0    1816    100      0 S   0.0   0.0   0:00.39 init
+  303 root      20   0    1816    100      0 S   0.0   0.0   0:00.30 init
+  184 root      20   0    1804     88      0 S   0.0   0.0   0:00.00 init
+  185 root      20   0    1812     88      0 S   0.0   0.0   0:00.00 init
+  281 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  302 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init

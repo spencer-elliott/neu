@@ -1,0 +1,84 @@
+top - 14:31:51 up 34 min,  0 users,  load average: 0.05, 0.03, 0.00
+Tasks:  21 total,   1 running,  20 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  1.6 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7887.7 total,   6548.7 free,    781.8 used,    790.9 buff/cache     
+MiB Swap:   2048.0 total,   2047.5 free,      0.5 used.   7105.9 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 4354 spencer   20   0    8152   5084   3276 R   0.0   0.1   0:00.00 top
+  186 spencer   20   0    2876   1224   1128 S   0.0   0.0   0:00.00 sh
+  187 spencer   20   0    2876   1256   1164 S   0.0   0.0   0:00.00 sh
+  265 spencer   20   0    2876   1224   1132 S   0.0   0.0   0:00.00 sh
+    1 root      20   0    1804   1188   1104 S   0.0   0.0   0:00.01 init
+  184 root      20   0    1804     88      0 S   0.0   0.0   0:00.00 init
+  185 root      20   0    1812     88      0 S   0.0   0.0   0:00.00 init
+  281 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  282 root      20   0    1816    100      0 S   0.0   0.0   0:00.54 init
+  302 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  303 root      20   0    1816    100      0 S   0.0   0.0   0:00.46 init
+  409 spencer   20   0    6372   5604   3768 S   0.0   0.1   0:00.20 bash
+ 4353 spencer   20   0    4936   3320   3072 S   0.0   0.0   0:00.00 bash
+  269 spencer   20   0 1796992 160716  55560 S   0.0   2.0   0:04.92 MainThread
+  283 spencer   20   0 1422180  70484  40220 S   0.0   0.9   0:01.09 MainThread
+  307 spencer   20   0 1411452  58660  40196 S   0.0   0.7   0:01.06 MainThread
+  322 spencer   20   0 1449288  62564  42840 S   0.0   0.8   0:00.38 MainThread
+  329 spencer   20   0   17.7g 127568  58404 S   0.0   1.6   0:02.11 MainThread
+  344 spencer   20   0 9959.4m 179664  57756 S   0.0   2.2   0:23.27 MainThread
+  398 spencer   20   0 1469220  86044  50012 S   0.0   1.1   0:03.09 MainThread
+  750 spencer   20   0 1491760  67128  44480 S   0.0   0.8   0:00.17 MainThread
+top - 14:32:51 up 35 min,  0 users,  load average: 0.02, 0.03, 0.00
+Tasks:  21 total,   1 running,  20 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.0 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7887.7 total,   6546.3 free,    784.1 used,    791.0 buff/cache     
+MiB Swap:   2048.0 total,   2047.5 free,      0.5 used.   7103.6 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 4482 spencer   20   0    8152   4972   3164 R   0.0   0.1   0:00.00 top
+  186 spencer   20   0    2876   1224   1128 S   0.0   0.0   0:00.00 sh
+  187 spencer   20   0    2876   1256   1164 S   0.0   0.0   0:00.00 sh
+  265 spencer   20   0    2876   1224   1132 S   0.0   0.0   0:00.00 sh
+    1 root      20   0    1804   1188   1104 S   0.0   0.0   0:00.01 init
+  184 root      20   0    1804     88      0 S   0.0   0.0   0:00.00 init
+  185 root      20   0    1812     88      0 S   0.0   0.0   0:00.00 init
+  281 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  282 root      20   0    1816    100      0 S   0.0   0.0   0:00.55 init
+  302 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  303 root      20   0    1816    100      0 S   0.0   0.0   0:00.46 init
+  409 spencer   20   0    6372   5604   3768 S   0.0   0.1   0:00.20 bash
+ 4353 spencer   20   0    4936   3600   3328 S   0.0   0.0   0:00.00 bash
+  269 spencer   20   0 1796992 161368  55560 S   0.0   2.0   0:04.99 MainThread
+  283 spencer   20   0 1422180  70484  40220 S   0.0   0.9   0:01.11 MainThread
+  307 spencer   20   0 1411452  58660  40196 S   0.0   0.7   0:01.07 MainThread
+  322 spencer   20   0 1449288  62564  42840 S   0.0   0.8   0:00.38 MainThread
+  329 spencer   20   0   17.7g 127568  58404 S   0.0   1.6   0:02.16 MainThread
+  344 spencer   20   0 9959.4m 179664  57756 S   0.0   2.2   0:23.98 MainThread
+  398 spencer   20   0 1469220  86628  50012 S   0.0   1.1   0:03.15 MainThread
+  750 spencer   20   0 1491760  67128  44480 S   0.0   0.8   0:00.18 MainThread
+top - 14:33:51 up 36 min,  0 users,  load average: 0.00, 0.02, 0.00
+Tasks:  21 total,   1 running,  20 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7887.7 total,   6544.6 free,    785.7 used,    791.1 buff/cache     
+MiB Swap:   2048.0 total,   2047.5 free,      0.5 used.   7102.0 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 4574 spencer   20   0    8152   4968   3164 R   0.0   0.1   0:00.00 top
+  186 spencer   20   0    2876   1224   1128 S   0.0   0.0   0:00.00 sh
+  187 spencer   20   0    2876   1256   1164 S   0.0   0.0   0:00.00 sh
+  265 spencer   20   0    2876   1224   1132 S   0.0   0.0   0:00.00 sh
+    1 root      20   0    1804   1188   1104 S   0.0   0.0   0:00.01 init
+  184 root      20   0    1804     88      0 S   0.0   0.0   0:00.00 init
+  185 root      20   0    1812     88      0 S   0.0   0.0   0:00.00 init
+  281 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  282 root      20   0    1816    100      0 S   0.0   0.0   0:00.56 init
+  302 root      20   0    1816     88      0 S   0.0   0.0   0:00.00 init
+  303 root      20   0    1816    100      0 S   0.0   0.0   0:00.46 init
+  409 spencer   20   0    6372   5604   3768 S   0.0   0.1   0:00.20 bash
+ 4353 spencer   20   0    4936   3600   3328 S   0.0   0.0   0:00.00 bash
+  269 spencer   20   0 1796992 161368  55560 S   0.0   2.0   0:05.04 MainThread
+  283 spencer   20   0 1422180  70484  40220 S   0.0   0.9   0:01.13 MainThread
+  307 spencer   20   0 1411452  58660  40196 S   0.0   0.7   0:01.09 MainThread
+  322 spencer   20   0 1449288  62564  42840 S   0.0   0.8   0:00.40 MainThread
+  329 spencer   20   0   17.7g 127568  58404 S   0.0   1.6   0:02.20 MainThread
+  344 spencer   20   0 9959.4m 181392  57756 S   0.0   2.2   0:24.73 MainThread
+  398 spencer   20   0 1469220  86628  50012 S   0.0   1.1   0:03.19 MainThread
+  750 spencer   20   0 1491760  67128  44480 S   0.0   0.8   0:00.18 MainThread
