@@ -2,13 +2,15 @@
 # Assignment 5 - Question 1
 # By Spencer Elliott
 
+# This file uses a provided codon table to translate a DNA sequence in each reading frame (3 forward, 3 reverse).
+# Command line example: python3 q1.py standard.code anthrax_sasp.nuc
+
 # Take filenames from the command line
 import sys
 codons_file = open(sys.argv[1])
 seq_file = open(sys.argv[2])
 
 # Extracting info from the codon table file 
-# (Code from lecture 4)
 data = {}
 for l in codons_file:
     sl = l.split()
@@ -24,7 +26,6 @@ aa = data['AAs']
 st = data['Starts']
 
 # Creating dictionaries of codons with their amino acids, and codons with whether or not they are starts
-# (Code from lecture 4)
 codons = {}
 init = {}
 n = len(aa)
@@ -66,13 +67,25 @@ def translate(seq):
     # Iterate through the 3 forward frames
     for i in range(0,3):
         aa_sequences.append([])
-        # For each frame, translate into an amino acid sequence
+        # For each reading frame, translate into an amino acid sequence
         for j in range(i,seqlen,3):
             codon = seq[j:j+3]
             # Filter out trailing nucleotides (codons must be 3 bases)
             if len(codon) == 3:
-                aa = codons[codon]
-                aa_sequences[i].append(aa)
+                # Check for N as the third nucleotide
+                if codon[2] == 'N':
+                    # Check the set of possible amino acids
+                    codon_set = {codons[codon[0:2] + nuc] for nuc in 'ACGT'}
+                    # If there is only one possible amino acid, print it
+                    if len(codon_set) == 1:
+                        aa = codons[codon[0:2] + 'A']
+                    # Otherwise, print 'X'
+                    else:
+                        aa = 'X'
+                else:
+                    aa = codons[codon]
+            # Add the amino acid to the sequence
+            aa_sequences[i].append(aa)
         # Join the list of amino acid sequences into a string
         proteins.append([])
         proteins[i] = ''.join(aa_sequences[i])
@@ -80,16 +93,16 @@ def translate(seq):
 
 # Translate the sequence in each frame
 proteins = translate(seq)
-# Translate in each reverse (complement) frame
+# Translate the reverse complement in each frame
 rc_seq = reverseComplement(seq)
 rc_proteins = translate(rc_seq)
 
-# Printing results
+# Print the results
 print("Codon table:", sys.argv[1])
 print("Sequence:", sys.argv[2], ",", seqlen, "bases")
-print("Protein frame 0:", proteins[0])
-print("Protein frame 1:", proteins[1])
-print("Protein frame 2:", proteins[2])
-print("Reverse protein frame 0:", rc_proteins[0])
-print("Reverse protein frame 1:", rc_proteins[1])
-print("Reverse protein frame 2:", rc_proteins[2])
+print("Forward - frame 1:", proteins[0])
+print("Forward - frame 2:", proteins[1])
+print("Forward - frame 3:", proteins[2])
+print("Reverse - frame 1:", rc_proteins[0])
+print("Reverse - frame 2:", rc_proteins[1])
+print("Reverse - frame 3:", rc_proteins[2])
