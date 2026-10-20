@@ -72,8 +72,8 @@ def translate(seq):
             codon = seq[j:j+3]
             # Filter out trailing nucleotides (codons must be 3 bases)
             if len(codon) == 3:
-                # Check for N as the third nucleotide
-                if codon[2] == 'N':
+                # Check for N as the third nucleotide (and not first or second)
+                if codon[0] in 'ACGT' and codon[1] in 'ACGT' and codon[2] == 'N':
                     # Check the set of possible amino acids
                     codon_set = {codons[codon[0:2] + nuc] for nuc in 'ACGT'}
                     # If there is only one possible amino acid, print it
@@ -83,7 +83,7 @@ def translate(seq):
                     else:
                         aa = 'X'
                 else:
-                    aa = codons[codon]
+                    aa = codons.get(codon, 'X')
             # Add the amino acid to the sequence
             aa_sequences[i].append(aa)
         # Join the list of amino acid sequences into a string
