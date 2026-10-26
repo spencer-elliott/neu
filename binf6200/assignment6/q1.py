@@ -2,7 +2,7 @@
 # Assignment 6 - Question 1
 # By Spencer Elliott
 
-# This file reads a microarray data file, and finds the mean and standard deviation for expression of a specific gene.
+# This program reads a microarray data file, and finds mean and standard deviation for the expression of a specific gene.
 # Command line example: python3 q1.py data.csv N40554
 
 import sys
