@@ -1,0 +1,20 @@
+Module 07 Activity Reflection
+Spencer Elliott - BINF6310
+
+Flags and parameters used in the minimap2 command:
+-ax sr: Chooses output format for alignment (SAM) and preset for the type of reads (Illumina)
+-t ${SLURM_CPUS_PER_TASK}: Sets the number of CPU threads to the same amount as slurm file header
+${PATH_TO_REFERENCE}: Path to the reference genome
+${READ_PAIR}: The two read files (fastq.gz)
+
+flagstat.txt is a summary of all of the reads and what categories they fall into. It is a quick way
+to make sure that the results of an alignment look correct and that most reads were properly paired
+and mapped.
+
+idxstats uses the index to show how many alignments there are for each part of the reference sequence.
+It also shows how many reads were left unmapped.
+Four columns:
+1. Name of reference sequence
+2. Sequence length
+3. Mapped reads
+4. Unmapped reads
