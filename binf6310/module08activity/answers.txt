@@ -1,0 +1,19 @@
+# BINF6310
+# Module 08 Activity - Answers to questions
+# By Spencer Elliott
+
+1. The registry is quay.io, the publisher is biocontainers, the tool is fastqc,
+   and the tag is 0.12.1--hdfd78af_0. The version printed is FastQC v0.12.1.
+2. "Skipping '/courses/BINF6310.202710/data/q.wan/module08/sample1_R1.fastq.gz' 
+   which didn't exist, or couldn't be read", followed by "0". The file could not
+   be read because the container isn't able to see /courses by default.
+3. The .sif file is ~280MB. apptainer cache list reported ~562MB of space, and
+   the cache is found in ~/.apptainer/cache.
+4. The image I pulled myself is the FastQC, and the image from the shared folder
+   is MultiQC. This job used MultiQC 1.25, which is the version saved into the
+   image despite newer versions existing.
+5. a. sample2
+   b. sample4
+   c. Adapter content (fails in 6 files)
+6. You would trim the adapter sequences before using these reads, which is explained
+   by the check in Adapter Content.
