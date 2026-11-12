@@ -1,0 +1,4 @@
+TIMESTAMP          	DURATION	RUN NAME        	STATUS	REVISION ID	SESSION ID                          	COMMAND                                 
+2026-11-12 11:49:44	32.8s   	amazing_kimura  	OK    	b8f191a011 	7a8dce0b-c960-4a46-8a1f-04f9f1f8ce0f	nextflow run main.nf                    
+2026-11-12 11:53:32	1.7s    	agitated_gautier	OK    	b8f191a011 	7a8dce0b-c960-4a46-8a1f-04f9f1f8ce0f	nextflow run main.nf -resume            
+2026-11-12 11:54:16	11s     	berserk_swirles 	OK    	8f9d05b826 	7a8dce0b-c960-4a46-8a1f-04f9f1f8ce0f	nextflow main.nf -resume -ansi-log false

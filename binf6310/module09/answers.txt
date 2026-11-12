@@ -1,0 +1,37 @@
+Module 09 Activity Questions
+By Spencer Elliott
+BINF6310
+
+1. ___A___: /courses/BINF6310.202710/data/q.wan/module09/containers/quast_5.3.0--py313pl5321h5ca1c30_2.sif
+   ___B___: ${sample}_quast
+   ___C___: quast.py -o ${sample}_quast -r ${reference} ${contigs}
+   ___D___: SPADES.out
+
+2. Code in brackets: 56/7c5fa6
+   Full path of task folder: /scratch/elliott.sp/module09/work/56/7c5fa6e0f1d2277b65ea6201df9507
+
+3. spades.py -1 mutant_R1.fastq -2 mutant_R2.fastq -o spades_out -t 4 -m 8
+   ${reads[0]} -> mutant_R1.fastq
+   ${reads[1]} -> mutant_R2.fastq
+   ${task_cpus} -> 4
+
+4. Folder 1: /courses/BINF6310.202710/data/q.wan/module09
+   This folder has the input (fastq) files with the reads.
+   Folder 2: /scratch/elliott.sp/module09/work/56/7c5fa6e0f1d2277b65ea6201df9507
+   This folder is where the task was run and the outputs were saved.
+
+5. For the run with no change: "1 of 1, cached: 1 ✔"
+   After the change: SPADES had "Cached process" and QUAST had "Submitted process".
+   SPADES wasn't changed so it was still cached, while QUAST changed so it was run again.
+
+6. # contigs: 6
+   Largest contig: 132140
+   Total length: 179288
+   N50: 132140
+   L50: 1
+   GC (%): 33.59
+   Genome fraction (%): 90.751
+
+7. The largest contig is longer than half the total length. When summing contigs from
+   longest to shortest it takes just this one to reach half the total, so N50 equals its
+   length and L50 equals 1.
