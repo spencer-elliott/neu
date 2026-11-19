@@ -1,0 +1,46 @@
+# Spencer Elliott
+# BINF6310
+# Module 10 Activity - Answers to questions
+
+1. __A__: -o quant/$sample
+   __B__: $DATA/reads/$run.fastq.gz
+   __C__: design = ~ condition
+   __D__: contrast = c("condition", "infected", "mock")
+
+2. n_processed: 2000000
+   n_pseudoaligned: 1806096
+   p_pseudoaligned: 90.3%
+
+3. Infected_1 - 272075 - 13.6% (infected)
+   Infected_2 - 349033 - 17.5% (infected)
+   Infected_3 - 300167 - 15.0% (infected)
+   Mock_1 - 2 - 0.0%
+   Mock_2 - 2 - 0.0%
+   Mock_3 - 1 - 0.0%
+
+4. p_pseudoaligned is only 3.0%, and est_counts is only 25.
+   The reads are on the wrong strand from what kallisto expects, so
+   there are virtually no matches.
+
+5. Number of genes tested: 11339
+   Number up at padj < 0.05: 1697
+   Number down at padj < 0.05: 1648
+   Share of variation on PC1: 93%
+
+6. IFNB1 - log2FoldChange: 10.464 - padj: 7.23e-17 - Group: Alarm
+   IFNL1 - log2FoldChange: 8.182 - padj: 3.17e-10 - Group: Alarm
+   IFIT1 - log2FoldChange: 4.564 - padj: 9.93e-177 - Group: Defenses
+   MX1 - log2FoldChange: 3.930 - padj: 4.82e-143 - Group: Defenses
+   CXCL10 - log2FoldChange: 5.483 - padj: 3.5e-28 - Group: Call for help
+
+7. There is no SARS-CoV-2 row in results.tsv, because reads were only aligned to the
+   human genome with human genes.
+
+8. log2FoldChange from my counts: 10.464
+   log2FoldChange from NCBI: 10.105
+   Number of genes at padj < 0.05 from my analysis: 3345
+   Number of genes at padj < 0.05 from NCBI: 7647
+
+9. First KEGG term: Cytokine-cytokine receptor interaction
+   Interferon alpha/beta signaling - adjusted p-value: 1.541e-24
+   Number of my genes in it (T∩Q): 37
